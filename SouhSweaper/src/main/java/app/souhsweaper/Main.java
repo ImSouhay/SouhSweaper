@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         Logic.playFlag();
-        Image icon=new Image("C://Users//lordo//Desktop//everythingV2//SouhSweaper//SouhSweaper//src//main//resources//app//souhsweaper//bomb.png");
+        Image icon=new Image(String.valueOf(Main.class.getResource("bomb.png")));
         Parent root=FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Welcome.fxml")));
         Scene scene = new Scene(root);
         stage.setTitle("SouhSweeper");
